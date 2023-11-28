@@ -1,0 +1,78 @@
+#contributionGraph {
+  display: grid;
+  grid-template-columns: repeat(51, 15px);
+  grid-template-rows: repeat(7, 15px);
+  gap: 1.5px;
+  max-width: 840px;
+}
+.wrapper {
+  display: flex;
+  .month-container {
+    position: absolute;
+    top: 18px;
+    position: absolute;
+    top: 18px;
+    display: flex;
+    justify-content: space-between;
+    width: 840px;
+    .month {
+      color: #959494;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 1px;
+    }
+  }
+  .contribution-cell {
+    background-color: #EDEDED;
+    transition: background-color 0.3s ease;
+    width: 15px;
+    height: 15px;
+  }
+  .contribution-cell:hover {
+    border: 1px solid #00000080;
+    cursor: pointer;
+  }
+
+  .days-of-week {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .day-of-week {
+      color: #959494;
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: center;
+      padding: 1px;
+    }
+  }
+  .additional-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .count-info {
+      color: white;
+      font-size: 12px;
+      white-space: nowrap;
+      font-weight: 400;
+      line-height: 15px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
+    .date-info {
+      font-family: Inter;
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 12px;
+      letter-spacing: 0em;
+      text-align: left;
+      color: #7C7C7C;
+    }
+  }
+}
